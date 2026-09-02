@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>許惟竣律師 | 律生活法律事務所</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        law: {
+                            50: '#f0f7f4',
+                            100: '#d5ede2',
+                            600: '#1b8058',
+                            700: '#176c4b',
+                            800: '#12573d',
+                            900: '#0d402c',
+                            brand: '#219672', /* 律生活官方「聯絡我們」的主題綠色 */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans TC', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-law-100 selection:text-law-900">
+
+    <!-- Navbar / Header -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-9 h-9 rounded-xl bg-law-brand text-white flex items-center justify-center font-bold text-lg shadow-sm">
+                    許
+                </div>
+                <div>
+                    <h1 class="font-bold text-slate-900 leading-tight">許惟竣律師</h1>
+                    <p class="text-xs text-slate-500">律生活法律事務所</p>
+                </div>
+            </div>
+            <nav class="hidden sm:flex items-center space-x-6 text-sm font-medium text-slate-600">
+                <a href="#hero" class="hover:text-law-brand transition">關於律師</a>
+                <a href="#expertise" class="hover:text-law-brand transition">核心專長</a>
+                <a href="#evaluator" class="hover:text-law-brand transition">需求評估</a>
+                <a href="#referral" class="hover:text-law-brand transition">合作引薦</a>
+            </nav>
+            <a href="#evaluator" class="bg-law-brand hover:bg-law-700 text-white text-sm px-4 py-2 rounded-xl font-medium transition shadow-sm">
+                線上諮詢
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12 space-y-16">
+
+        <!-- 1. 個人形象與標語區 -->
+        <section id="hero" class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-100 shadow-xl shadow-slate-100 flex flex-col md:flex-row items-center gap-8 relative overflow-hidden">
+            <div class="absolute -right-16 -top-16 w-48 h-48 bg-law-50 rounded-full blur-2xl pointer-events-none"></div>
+            
+            <!-- 大頭照視覺佔位 -->
+            <div class="relative shrink-0">
+                <div class="w-36 h-36 sm:w-44 sm:h-44 rounded-2xl bg-gradient-to-br from-law-brand to-law-900 text-white flex flex-col items-center justify-center shadow-lg relative overflow-hidden group">
+                    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                    <i class="fa-solid fa-scale-balanced text-4xl sm:text-5xl mb-2 text-law-100 group-hover:scale-110 transition duration-300"></i>
+                    <span class="text-xs tracking-widest text-law-100 font-light">專業法律顧問</span>
+                </div>
+                <div class="absolute -bottom-3 -right-3 bg-white border border-slate-100 px-3 py-1.5 rounded-xl shadow-md text-xs font-semibold text-law-900 flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    執業中
+                </div>
+            </div>
+
+            <!-- 文字資訊與標語 -->
+            <div class="flex-1 text-center md:text-left space-y-4">
+                <div class="space-y-1">
+                    <div class="inline-block bg-law-50 text-law-brand text-xs font-semibold px-3 py-1 rounded-full mb-2">
+                        律生活法律事務所・授證律師
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">許惟竣 律師</h2>
+                    <p class="text-sm font-medium text-slate-500">Wei-Chun Hsu, Esq.</p>
+                </div>
+
+                <!-- 核心標語 -->
+                <div class="bg-law-50/80 border-l-4 border-law-brand p-4 rounded-r-xl">
+                    <p class="text-law-900 font-bold text-base sm:text-lg">「婚姻家庭有難題，法律問題找惟竣。」</p>
+                    <p class="text-xs text-slate-600 mt-1">以同理心傾聽您的需求，用嚴謹法律專業守護您的權益與幸福。</p>
+                </div>
+
+                <!-- 快速聯絡按鈕 -->
+                <div class="flex flex-wrap justify-center md:justify-start gap-3 pt-2">
+                    <a href="tel:0900000000" class="bg-law-brand hover:bg-law-700 text-white text-sm font-medium px-5 py-2.5 rounded-xl transition flex items-center gap-2 shadow-sm">
+                        <i class="fa-solid fa-phone text-xs"></i> 預約專線
+                    </a>
+                    <a href="#evaluator" class="bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 text-sm font-medium px-5 py-2.5 rounded-xl transition flex items-center gap-2">
+                        <i class="fa-solid fa-clipboard-question text-law-brand text-xs"></i> 需求評估小工具
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 核心專長分頁卡片區 -->
+        <section id="expertise" class="space-y-6">
+            <div class="text-center space-y-2">
+                <h3 class="text-xl sm:text-2xl font-bold text-slate-900">核心專長與專業領域</h3>
+                <p class="text-sm text-slate-500">深耕家事、民事與平權議題，為您提供精準安心的法律對策</p>
+            </div>
+
+            <!-- 分頁按鈕 -->
+            <div class="flex flex-wrap justify-center gap-2" id="tab-buttons">
+                <button onclick="switchTab('family')" class="tab-btn px-4 py-2 text-sm font-medium rounded-xl transition bg-law-brand text-white shadow-sm" data-tab="family">
+                    <i class="fa-solid fa-house-chimney-user mr-1.5"></i> 家事與婚姻事件
+                </button>
+                <button onclick="switchTab('civil')" class="tab-btn px-4 py-2 text-sm font-medium rounded-xl transition bg-white text-slate-600 hover:bg-slate-100 border border-slate-200" data-tab="civil">
+                    <i class="fa-solid fa-file-contract mr-1.5"></i> 一般民事糾紛
+                </button>
+                <button onclick="switchTab('equality')" class="tab-btn px-4 py-2 text-sm font-medium rounded-xl transition bg-white text-slate-600 hover:bg-slate-100 border border-slate-200" data-tab="equality">
+                    <i class="fa-solid fa-hands-holding-child mr-1.5"></i> 性別平權與多元家庭
+                </button>
+                <button onclick="switchTab('background')" class="tab-btn px-4 py-2 text-sm font-medium rounded-xl transition bg-white text-slate-600 hover:bg-slate-100 border border-slate-200" data-tab="background">
+                    <i class="fa-solid fa-graduation-cap mr-1.5"></i> 學經歷背景
+                </button>
+            </div>
+
+            <!-- 分頁內容容器 -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-lg shadow-slate-100">
+                
+                <!-- 內容 1：家事與婚姻事件 -->
+                <div id="content-family" class="tab-content space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-law-50 text-law-brand flex items-center justify-center shrink-0 text-xl">
+                            <i class="fa-solid fa-house-chimney-user"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-900">家事法律專業服務</h4>
+                            <p class="text-sm text-slate-500">守護破碎邊緣的家庭，爭取當事人與未成年子女的最佳利益。</p>
+                        </div>
+                    </div>
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                            <h5 class="font-semibold text-slate-800 text-sm mb-1 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-law-brand text-xs"></i> 離婚協議與訴訟
+                            </h5>
+                            <p class="text-xs text-slate-600">協議離婚見證、裁判離婚訴訟、財產分配與贍養費請求。</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                            <h5 class="font-semibold text-slate-800 text-sm mb-1 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-law-brand text-xs"></i> 子女監護與探視
+                            </h5>
+                            <p class="text-xs text-slate-600">未成年子女親權行使負擔、酌定與改定、探視權方案規劃。</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                            <h5 class="font-semibold text-slate-800 text-sm mb-1 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-law-brand text-xs"></i> 婚前與夫妻財產
+                            </h5>
+                            <p class="text-xs text-slate-600">婚前協議書擬定、夫妻剩餘財產差額分配請求權訴訟。</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                            <h5 class="font-semibold text-slate-800 text-sm mb-1 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-law-brand text-xs"></i> 繼承與遺產分配
+                            </h5>
+                            <p class="text-xs text-slate-600">遺囑見證與預立、拋棄繼承、限定繼承、遺產分割訴訟。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 內容 2：一般民事糾紛 -->
+                <div id="content-civil" class="tab-content hidden space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-law-50 text-law-brand flex items-center justify-center shrink-0 text-xl">
+                            <i class="fa-solid fa-file-contract"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-900">一般民事與契約糾紛</h4>
+                            <p class="text-sm text-slate-500">協助各類財產權益保障、合約審閱及金錢債務糾紛處理。</p>
+                        </div>
+                    </div>
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                            <h5 class="font-semibold text-slate-800 text-sm mb-1 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-law-brand text-xs"></i> 契約審閱與擬定
+                            </h5>
+                            <p class="text-xs text-slate-600">各類商業契約、租賃契約、勞動契約審閱與風險規避。</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                            <h5 class="font-semibold text-slate-800 text-sm mb-1 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-law-brand text-xs"></i> 損害賠償與侵權
+                            </h5>
+                            <p class="text-xs text-slate-600">車禍損害賠償、精神慰撫金請求、名譽侵害救濟。</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                            <h5 class="font-semibold text-slate-800 text-sm mb-1 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-law-brand text-xs"></i> 債務催收與強制執行
+                            </h5>
+                            <p class="text-xs text-slate-600">本票裁定、支付命令、民事清償債務訴訟及財產強制執行。</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                            <h5 class="font-semibold text-slate-800 text-sm mb-1 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-law-brand text-xs"></i> 調解與訴訟代理
+                            </h5>
+                            <p class="text-xs text-slate-600">法院調解程序代理、民事一二三審訴訟代理與攻防。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 內容 3：性別平權與多元家庭 -->
+                <div id="content-equality" class="tab-content hidden space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-law-50 text-law-brand flex items-center justify-center shrink-0 text-xl">
+                            <i class="fa-solid fa-hands-holding-child"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-900">性別平權與多元家庭法律</h4>
+                            <p class="text-sm text-slate-500">致力於性別平權、同性婚姻及多元成家相關之法律權益爭取。</p>
+                        </div>
+                    </div>
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                            <h5 class="font-semibold text-slate-800 text-sm mb-1 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-law-brand text-xs"></i> 同性婚姻與登記
+                            </h5>
+                            <p class="text-xs text-slate-600">同性結婚登記相關法律諮詢、跨國同婚法律協助。</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                            <h5 class="font-semibold text-slate-800 text-sm mb-1 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-law-brand text-xs"></i> 同志繼親收養
+                            </h5>
+                            <p class="text-xs text-slate-600">同婚配偶之無血緣子女收養程序、親權聲請代理。</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                            <h5 class="font-semibold text-slate-800 text-sm mb-1 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-law-brand text-xs"></i> 性別工作平等與職場歧視
+                            </h5>
+                            <p class="text-xs text-slate-600">職場性騷擾申訴與救濟、性別工作平等法相關爭議處理。</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                            <h5 class="font-semibold text-slate-800 text-sm mb-1 flex items-center gap-2">
+                                <i class="fa-solid fa-check text-law-brand text-xs"></i> 多元家庭財產權益
+                            </h5>
+                            <p class="text-xs text-slate-600">非典型家庭、伴侶關係之財產契約規劃與保障。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 內容 4：學經歷背景 -->
+                <div id="content-background" class="tab-content hidden space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-law-50 text-law-brand flex items-center justify-center shrink-0 text-xl">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-900">學經歷與專業資格</h4>
+                            <p class="text-sm text-slate-500">扎實的法學訓練與豐富的實務訴訟經驗。</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="border-l-2 border-law-200 pl-4 space-y-1">
+                            <span class="text-xs font-semibold text-law-brand bg-law-50 px-2 py-0.5 rounded">現職</span>
+                            <h5 class="font-semibold text-slate-800 text-sm">律生活法律事務所 執業律師</h5>
+                            <p class="text-xs text-slate-500">專注於家事事件、民事訴訟與人權平權案件。</p>
+                        </div>
+                        <div class="border-l-2 border-law-200 pl-4 space-y-1">
+                            <span class="text-xs font-semibold text-law-brand bg-law-50 px-2 py-0.5 rounded">經歷</span>
+                            <h5 class="font-semibold text-slate-800 text-sm">各級法院民事、家事訴訟代理人</h5>
+                            <p class="text-xs text-slate-500">多次擔任機關團體法律講座、民間家事法律顧問。</p>
+                        </div>
+                        <div class="border-l-2 border-law-200 pl-4 space-y-1">
+                            <span class="text-xs font-semibold text-law-brand bg-law-50 px-2 py-0.5 rounded">學歷</span>
+                            <h5 class="font-semibold text-slate-800 text-sm">國內優質法學研究所 / 法學學士、碩士</h5>
+                            <p class="text-xs text-slate-500">專研民事法學與身分法領域。</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3. 『法律需求快速評估』互動小工具 -->
+        <section id="evaluator" class="bg-gradient-to-br from-law-900 to-law-800 text-white rounded-3xl p-6 sm:p-10 shadow-xl space-y-8">
+            <div class="text-center space-y-2 max-w-xl mx-auto">
+                <div class="inline-block bg-white/10 text-law-100 text-xs font-semibold px-3 py-1 rounded-full mb-1">
+                    互動諮詢小工具
+                </div>
+                <h3 class="text-xl sm:text-2xl font-bold">法律需求快速評估</h3>
+                <p class="text-sm text-slate-300">請點選下方最符合您目前面臨的情境，即時查看許律師為您準備的專業建議與協助方式。</p>
+            </div>
+
+            <!-- 情境選擇按鈕 -->
+            <div class="grid sm:grid-cols-3 gap-3">
+                <button onclick="selectScenario('divorce')" id="btn-divorce" class="scenario-btn text-left p-4 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/10 transition flex flex-col justify-between group">
+                    <div class="flex items-center justify-between mb-3">
+                        <i class="fa-solid fa-heart-crack text-xl text-law-100 group-hover:scale-110 transition"></i>
+                        <span class="text-xs text-law-200 bg-black/20 px-2 py-0.5 rounded">情境一</span>
+                    </div>
+                    <span class="font-medium text-sm">正在考慮離婚 / 分居中</span>
+                </button>
+
+                <button onclick="selectScenario('marriage')" id="btn-marriage" class="scenario-btn text-left p-4 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/10 transition flex flex-col justify-between group">
+                    <div class="flex items-center justify-between mb-3">
+                        <i class="fa-solid fa-ring text-xl text-law-100 group-hover:scale-110 transition"></i>
+                        <span class="text-xs text-law-200 bg-black/20 px-2 py-0.5 rounded">情境二</span>
+                    </div>
+                    <span class="font-medium text-sm">準備結婚・想做婚前協議</span>
+                </button>
+
+                <button onclick="selectScenario('inheritance')" id="btn-inheritance" class="scenario-btn text-left p-4 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/10 transition flex flex-col justify-between group">
+                    <div class="flex items-center justify-between mb-3">
+                        <i class="fa-solid fa-scroll text-xl text-law-100 group-hover:scale-110 transition"></i>
+                        <span class="text-xs text-law-200 bg-black/20 px-2 py-0.5 rounded">情境三</span>
+                    </div>
+                    <span class="font-medium text-sm">面臨遺產繼承與分配爭議</span>
+                </button>
+            </div>
+
+            <!-- 動態顯示建議結果區塊 -->
+            <div id="result-card" class="bg-white text-slate-800 rounded-2xl p-6 sm:p-8 space-y-6 shadow-inner transition-all duration-300">
+                <div id="result-content" class="space-y-4">
+                    <!-- 預設顯示提示 -->
+                    <div class="text-center py-6 text-slate-400 space-y-2">
+                        <i class="fa-regular fa-hand-pointer text-3xl animate-bounce"></i>
+                        <p class="text-sm">請點選上方任一情境按鈕，即可檢視專屬法律建議。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 合作與引薦專區 -->
+        <section id="referral" class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-100 shadow-xl shadow-slate-100 space-y-8">
+            <div class="text-center space-y-2 max-w-xl mx-auto">
+                <div class="inline-block bg-law-50 text-law-brand text-xs font-semibold px-3 py-1 rounded-full mb-1">
+                    夥伴網絡
+                </div>
+                <h3 class="text-xl sm:text-2xl font-bold text-slate-900">合作與引薦專區</h3>
+                <p class="text-sm text-slate-500">許惟竣律師致力於建構跨專業的協力網絡，期盼與各界專業人士攜手提供當事人全方位的支持。</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- 希望引薦的客戶類型 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-law-brand text-white flex items-center justify-center text-base">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-base">希望引薦的客戶類型</h4>
+                    </div>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-circle-check text-law-brand mt-1 shrink-0"></i>
+                            <span>面臨婚姻危機、需協議離婚或進行剩餘財產分配之當事人。</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-circle-check text-law-brand mt-1 shrink-0"></i>
+                            <span>為未成年子女之監護權、探視權爭議所苦之家長。</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-circle-check text-law-brand mt-1 shrink-0"></i>
+                            <span>重視保障自身財產權利、希望簽訂婚前/婚後協議之伴侶。</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-circle-check text-law-brand mt-1 shrink-0"></i>
+                            <span>有遺產分割協議、拋棄繼承或預立遺囑規劃需求的民眾。</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 希望合作的對象 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-law-brand text-white flex items-center justify-center text-base">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-base">希望合作的專業夥伴</h4>
+                    </div>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-circle-check text-law-brand mt-1 shrink-0"></i>
+                            <div>
+                                <strong class="text-slate-800">伴侶／婚姻諮商心理師</strong>
+                                <p class="text-xs text-slate-500 mt-0.5">於家事案件中結合心理支持與法律程序，協助當事人平穩度過轉折。</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-circle-check text-law-brand mt-1 shrink-0"></i>
+                            <div>
+                                <strong class="text-slate-800">會計師 / 記帳士 / 地政士</strong>
+                                <p class="text-xs text-slate-500 mt-0.5">處理遺產稅務規劃、夫妻財產鑑價及不動產過戶等實務協同。</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-circle-check text-law-brand mt-1 shrink-0"></i>
+                            <div>
+                                <strong class="text-slate-800">社福團體與平權倡議工作者</strong>
+                                <p class="text-xs text-slate-500 mt-0.5">共同推動性別平權、多元家庭及家暴防治等公益法律資源。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center pt-2">
+                <a href="mailto:contact@lawlife.tw" class="inline-flex items-center gap-2 bg-law-50 hover:bg-law-100 text-law-brand px-6 py-3 rounded-xl font-medium text-sm transition">
+                    <i class="fa-solid fa-envelope"></i> 專業交流與引薦聯絡：contact@lawlife.tw
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-10 mt-16 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
+            <div class="flex items-center justify-center space-x-2">
+                <div class="w-7 h-7 rounded-lg bg-law-brand text-white flex items-center justify-center font-bold text-sm">許</div>
+                <span class="text-white font-bold tracking-wide">許惟竣律師 | 律生活法律事務所</span>
+            </div>
+            <p class="text-xs text-slate-500">「婚姻家庭有難題，法律問題找惟竣。」</p>
+            <p class="text-xs text-slate-600 pt-4 border-t border-slate-800/60">
+                &copy; 2026 Wei-Chun Hsu Law Office. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript 互動邏輯 -->
+    <script>
+        // 1. 核心專長分頁切換邏輯
+        function switchTab(tabId) {
+            // 切換按鈕樣式
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                if(btn.dataset.tab === tabId) {
+                    btn.classList.remove('bg-white', 'text-slate-600', 'hover:bg-slate-100', 'border', 'border-slate-200');
+                    btn.classList.add('bg-law-brand', 'text-white', 'shadow-sm');
+                } else {
+                    btn.classList.remove('bg-law-brand', 'text-white', 'shadow-sm');
+                    btn.classList.add('bg-white', 'text-slate-600', 'hover:bg-slate-100', 'border', 'border-slate-200');
+                }
+            });
+
+            // 切換內容顯示
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => {
+                content.classList.add('hidden');
+            });
+            document.getElementById(`content-${tabId}`).classList.remove('hidden');
+        }
+
+        // 2. 法律需求快速評估互動資料
+        const scenarioData = {
+            divorce: {
+                title: "正在考慮離婚 / 分居中",
+                badge: "家事與婚姻事件",
+                icon: "fa-heart-crack",
+                advice: "面臨離婚決策時，情感與法律程序常同時交織。首要之務是釐清雙方對於「離婚協議」、「未成年子女監護權/探視權」以及「剩餘財產分配」的共識或分歧點。",
+                help: [
+                    "協助草擬與檢視離婚協議書內容，保障自身權益。",
+                    "評估協議不成時之訴訟離婚要件（如民法第1056條重大事由）。",
+                    "爭取子女最佳利益之親權酌定與合理探視方案。",
+                    "計算並請求夫妻剩餘財產差額分配。"
+                ],
+                actionText: "預約離婚諮詢"
+            },
+            marriage: {
+                title: "準備結婚・想做婚前協議",
+                badge: "預防性法律規劃",
+                icon: "fa-ring",
+                advice: "步入婚姻是人生重要階段，透過事前完善的財產與生活規劃（如婚前協議書），不僅能避免未來不必要的爭執，更能建立彼此財務與責任的透明共識。",
+                help: [
+                    "依據雙方需求客製化擬定「婚前財產契約」。",
+                    "明確約定夫妻財產制（法定財產制或分別財產制）。",
+                    "針對債務分擔、生活費負擔及未來家務分工提供法律建議。",
+                    "確保協議內容符合民法規定，具備法律效力。"
+                ],
+                actionText: "預約婚前協議諮詢"
+            },
+            inheritance: {
+                title: "面臨遺產繼承與分配爭議",
+                badge: "繼承與家事事件",
+                icon: "fa-scroll",
+                advice: "長輩離去後的遺產處理往往牽涉多位繼承人間的意見分歧。處理繼承時應注意法定繼承順位、應繼分與特留分之計算，並及時選擇適當的辦理方式（如限定繼承或拋棄繼承）。",
+                help: [
+                    "遺產清冊之調閱與整理、限定繼承與拋棄繼承程序協助。",
+                    "遺產分割協議書之擬定與見證。",
+                    "因特留分不足或遺產分配不公之調解與訴訟代理。",
+                    "預立遺囑之法律諮詢與見證，預先安頓未來。"
+                ],
+                actionText: "預約繼承法律諮詢"
+            }
+        };
+
+        function selectScenario(type) {
+            // 按鈕選取狀態切換
+            const scenarioBtns = document.querySelectorAll('.scenario-btn');
+            scenarioBtns.forEach(btn => {
+                btn.classList.remove('bg-white/25', 'border-white');
+                btn.classList.add('bg-white/10', 'border-white/10');
+            });
+            const activeBtn = document.getElementById(`btn-${type}`);
+            activeBtn.classList.remove('bg-white/10', 'border-white/10');
+            activeBtn.classList.add('bg-white/25', 'border-white');
+
+            const data = scenarioData[type];
+            const container = document.getElementById('result-content');
+
+            // 渲染動態內容
+            container.innerHTML = `
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-100 pb-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-law-50 text-law-brand flex items-center justify-center text-lg">
+                            <i class="fa-solid ${data.icon}"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-law-brand font-semibold bg-law-50 px-2.5 py-0.5 rounded-full">${data.badge}</span>
+                            <h4 class="text-lg font-bold text-slate-900 mt-1">${data.title}</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-4 text-sm">
+                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 space-y-1">
+                        <span class="text-xs font-bold text-slate-400 tracking-wider uppercase">許律師專業法律建議</span>
+                        <p class="text-slate-700 leading-relaxed">${data.advice}</p>
+                    </div>
+
+                    <div class="space-y-2">
+                        <span class="text-xs font-bold text-slate-400 tracking-wider uppercase">許律師能提供的協助</span>
+                        <div class="grid sm:grid-cols-2 gap-2">
+                            ${data.help.map(item => `
+                                <div class="flex items-start gap-2 bg-slate-50/60 p-3 rounded-xl border border-slate-100">
+                                    <i class="fa-solid fa-check text-law-brand mt-0.5 shrink-0 text-xs"></i>
+                                    <span class="text-xs text-slate-700">${item}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-slate-100">
+                    <p class="text-xs text-slate-500">
+                        <i class="fa-solid fa-circle-info text-law-brand mr-1"></i> 每件個案狀況皆有不同，歡迎直接與許律師預約一對一深度諮詢。
+                    </p>
+                    <a href="tel:0900000000" class="w-full sm:w-auto bg-law-brand hover:bg-law-700 text-white text-sm font-medium px-6 py-2.5 rounded-xl transition text-center shadow-sm shrink-0">
+                        <i class="fa-solid fa-phone mr-1.5 text-xs"></i> ${data.actionText}
+                    </a>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>
